@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.playlists {
+    width: 100%;
+}
+
+.playlists td {
+    padding: 10px 5px;
+}
+
+.playlists thead tr td {
+    padding: 0;
+}
+
+.playlists thead tr {
+    background-color: rgb(236, 240, 241);
+}
+
+.btn-td {
+    background-color: transparent;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 0;
+    height: 100%;
+    width: 100%;
+}
