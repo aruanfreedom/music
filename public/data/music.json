@@ -2,126 +2,126 @@
   {
     "id": "1",
     "name": "Maroon 5",
-    "genre": "rock",
-    "year": "2015",
+    "genre": "key-pop",
+    "year": "2011",
     "song": "Little by Little"
     },
  {
    "id": "2",
     "name": "Maroon 5",
-    "genre": "rock",
+    "genre": "rap",
     "year": "1915",
     "song": "Feral"
   },
  {
    "id": "3",
     "name": "Maroon 5",
-    "genre": "rock",
-    "year": "2015",
+    "genre": "rap",
+    "year": "2011",
     "song": "Lotus Flower"
   },
  {
    "id": "4",
     "name": "Maroon 5",
-    "genre": "rock",
-    "year": "2015",
+    "genre": "rap",
+    "year": "2011",
     "song": "Codex"
   },
  {
    "id": "5",
     "name": "Maroon 5",
-    "genre": "rock",
-    "year": "2015",
+    "genre": "rap",
+    "year": "2011",
     "song": "Give Up the Ghost"
   },
  {
    "id": "6",
     "name": "Eminem",
-    "genre": "rock",
+    "genre": "lyrics",
     "year": "2015",
     "song": "Separator"
   },
  {
    "id": "7",
     "name": "Eminem",
-    "genre": "rock",
+    "genre": "lyrics",
     "year": "2015",
     "song": "Dummy"
   },
  {
    "id": "8",
     "name": "Eminem",
-    "genre": "rock",
+    "genre": "lyrics",
     "year": "2011",
     "song": "Mysterons"
   },
  {
    "id": "9",
     "name": "Eminem",
-    "genre": "rock",
+    "genre": "lyrics",
     "year": "2011",
     "song": "Sour Times"
   },
  {
    "id": "10",
     "name": "Eminem",
-    "genre": "rock",
+    "genre": "dubstep",
     "year": "2011",
     "song": "Strangers"
   },
  {
    "id": "11",
-    "name": "Radiohead",
-    "genre": "rock",
+    "name": "Black eyed peas",
+    "genre": "dubstep",
     "year": "2011",
     "song": "It Could Be Sweet"
   },
  {
    "id": "12",
-    "name": "Radiohead",
-    "genre": "rock",
+    "name": "Black eyed peas",
+    "genre": "dubstep",
     "year": "2018",
     "song": "Wandering Star"
   },
  {
    "id": "13",
-    "name": "Radiohead",
-    "genre": "rock",
+    "name": "Black eyed peas",
+    "genre": "dubstep",
     "year": "2018",
     "song": "It's a Fire"
   },
  {
    "id": "31",
-    "name": "Radiohead",
-    "genre": "rock",
+    "name": "Black eyed peas",
+    "genre": "opera",
     "year": "2018",
     "song": "Numb"
   },
  {
    "id": "14",
-    "name": "Radiohead",
-    "genre": "rock",
+    "name": "Nirvana",
+    "genre": "opera",
     "year": "2018",
     "song": "Roads"
   },
  {
    "id": "15",
-    "name": "Radiohead",
-    "genre": "rock",
+    "name": "Nirvana",
+    "genre": "opera",
     "year": "2018",
     "song": "Pedestal"
   },
  {
    "id": "16",
-    "name": "Radiohead",
-    "genre": "rock",
+    "name": "Nirvana",
+    "genre": "opera",
     "year": "2015",
     "song": "Biscuit"
   },
  {
    "id": "17",
-    "name": "Radiohead",
-    "genre": "rock",
+    "name": "Nirvana",
+    "genre": "opera",
     "year": "2015",
     "song": "Glory Box"
   },
@@ -129,91 +129,91 @@
    "id": "18",
     "name": "Radiohead",
     "genre": "rock",
-    "year": "2015",
+    "year": "2014",
     "song": "Third"
   },
  {
    "id": "19",
-    "name": "Radiohead",
+    "name": "Justin Timberlake",
     "genre": "rock",
-    "year": "2015",
+    "year": "2014",
     "song": "Silence"
   },
  {
    "id": "20",
-    "name": "Radiohead",
+    "name": "Justin Timberlake",
     "genre": "rock",
-    "year": "2015",
+    "year": "2014",
     "song": "Hunter"
   },
  {
    "id": "21",
-    "name": "Radiohead",
+    "name": "Justin Timberlake",
     "genre": "rock",
-    "year": "2015",
+    "year": "2013",
     "song": "Nylon Smile"
   },
  {
    "id": "22",
-    "name": "Radiohead",
+    "name": "Justin Timberlake",
     "genre": "rock",
-    "year": "2015",
+    "year": "2013",
     "song": "The Rip"
   },
  {
    "id": "23",
-    "name": "Radiohead",
+    "name": "Rihana",
     "genre": "rock",
-    "year": "2015",
+    "year": "2013",
     "song": "Plastic"
   },
  {
    "id": "24",
-    "name": "Radiohead",
+    "name": "Rihana",
     "genre": "rock",
-    "year": "2015",
+    "year": "2013",
     "song": "We Carry On"
   },
  {
    "id": "25",
-    "name": "Radiohead",
+    "name": "Rihana",
     "genre": "rock",
-    "year": "2015",
+    "year": "2012",
     "song": "Deep Water"
   },
  {
    "id": "26",
-    "name": "Radiohead",
+    "name": "Rihana",
     "genre": "rock",
-    "year": "2015",
+    "year": "2012",
     "song": "Machine Gun"
   },
  {
    "id": "27",
-    "name": "Radiohead",
+    "name": "Rihana",
     "genre": "rock",
-    "year": "2015",
+    "year": "2012",
     "song": "Small"
   },
  {
    "id": "28",
-    "name": "Radiohead",
-    "genre": "rock",
-    "year": "2015",
+    "name": "Beyonce",
+    "genre": "key-pop",
+    "year": "2012",
     "song": "Magic Doors"
   },
  {
    "id": "29",
-    "name": "Radiohead",
-    "genre": "rock",
-    "year": "2015",
+    "name": "Beyonce",
+    "genre": "key-pop",
+    "year": "2010",
     "song": "Threads"
   },
  {
    "id": "30",
-    "name": "Radiohead",
+    "name": "Beyonce",
     "genre": "pop",
-    "year": "2015",
+    "year": "2010",
     "song": "Threads"
   }
 ]
