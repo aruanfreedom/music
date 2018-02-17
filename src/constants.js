@@ -1,2 +1,5 @@
 export const MUSIC_FETCH = 'MUSIC_FETCH';
 export const MUSIC_SORT = 'MUSIC_SORT';
+export const MUSIC_FILTER = 'MUSIC_FILTER';
+export const MUSIC_FILTER_OPTIONS = 'MUSIC_FILTER_OPTIONS';
+export const ALL_FILETERS = 'ALL_FILETERS';

@@ -5,7 +5,11 @@ body {
 }
 
 .playlists {
-    width: 100%;
+    flex: 0 0 70%;
+}
+
+.playlists table {
+    width: 95%;
 }
 
 .playlists td {
@@ -28,4 +32,30 @@ body {
     padding: 10px 0;
     height: 100%;
     width: 100%;
+}
+
+.table-not-data {
+    text-align: center;
+}
+
+.arrow-top, .arrow-bottom, .arrow-default {
+    position: relative;
+}
+
+.arrow-top:before, .arrow-bottom:before, .arrow-default:before {
+    position: absolute;
+    left: -25px;
+    top: -2px;
+}
+
+.arrow-top:before {
+    content: "\2191";
+}
+
+.arrow-bottom:before {
+    content: "\2193";
+}
+
+.arrow-default:before {
+    content: "\2194";
 }
