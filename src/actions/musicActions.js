@@ -9,8 +9,9 @@ import {
   MUSIC_NEXT_PAGE,
 } from '../constants';
 import { sortLetter, sortNumber } from '../helpers/helpers';
+import config from '../config';
 
-export const musicFetch = () => (dispatch, getState) => fetch('http://localhost:3000/data/music.json')
+export const musicFetch = () => (dispatch, getState) => fetch(`${config.api}/data/music.json`)
   .then(response => response.json())
   .then((playlists) => {
     const { numberField } = getState().music;
