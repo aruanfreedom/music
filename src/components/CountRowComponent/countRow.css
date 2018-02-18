@@ -1,0 +1,21 @@
+.count-row__btns {
+    position: absolute;
+    right: 0;
+    margin: 12px 0;
+}
+
+.count-row__btns button {
+    background-color: transparent;
+    border: 1px solid #b3b3b3;
+    border-left-width: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.count-row__btns button.active-count-row {
+    background-color: rgb(236, 240, 241);
+}
+
+.count-row__btns button:first-child {
+    border-left-width: 1px;
+}

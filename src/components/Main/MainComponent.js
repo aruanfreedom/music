@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Table from '../table/Table';
-import FilterComponent from '../filter/FilterComponent';
+import Table from '../Table/Table';
+import FilterComponent from '../Filter/FilterComponent';
 import './main.css';
 
 class Main extends Component {

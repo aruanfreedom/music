@@ -1,10 +1,22 @@
 import _ from 'lodash';
-import { MUSIC_FETCH, MUSIC_SORT, MUSIC_FILTER, MUSIC_FILTER_OPTIONS, ALL_FILETERS } from '../constants';
+import {
+  MUSIC_FETCH,
+  MUSIC_SORT,
+  MUSIC_FILTER,
+  MUSIC_FILTER_OPTIONS,
+  ALL_FILETERS,
+  MUSIC_COUNT_FIELD,
+  MUSIC_NEXT_PAGE,
+} from '../constants';
 import { sortLetter, sortNumber } from '../helpers/helpers';
 
-export const musicFetch = () => dispatch => fetch('http://localhost:3000/data/music.json')
+export const musicFetch = () => (dispatch, getState) => fetch('http://localhost:3000/data/music.json')
   .then(response => response.json())
-  .then(playlists => dispatch({ type: MUSIC_FETCH, payload: playlists }))
+  .then((playlists) => {
+    const { numberField } = getState().music;
+    const limitPlaylist = playlists.slice(0, numberField);
+    dispatch({ type: MUSIC_FETCH, payload: { playlists, limitPlaylist } });
+  })
   .catch(e => console.log(e));
 
 export const orderSetName = (columnName, orderStatus, sortList) => (dispatch, getState) => {
@@ -39,8 +51,8 @@ export const filter = (filterName, parameter) => (dispatch, getState) => {
 
     const findtherParametre = otherParametres.map(otherParametre =>
       (playlist[parameter] === filterName || filterName === ALL_FILETERS) &&
-        (currentSelected[otherParametre] === playlist[otherParametre] ||
-          currentSelected[otherParametre] === ALL_FILETERS));
+      (currentSelected[otherParametre] === playlist[otherParametre] ||
+        currentSelected[otherParametre] === ALL_FILETERS));
 
     const findEveryParameter = findtherParametre.every(value => value === true);
 
@@ -73,3 +85,16 @@ export const getUniqueValues = (playlists, filterParameteres) => {
 
   return ({ type: MUSIC_FILTER_OPTIONS, payload: sortOptions });
 };
+
+export const setCountField = (limitPlaylists, numberField) =>
+  ({ type: MUSIC_COUNT_FIELD, payload: { limitPlaylists, numberField } });
+
+export const setNavigation = (defaultPlaylist, playlists, numberPage) => (dispatch, getState) => {
+  const { currentNumberRow } = getState().music;
+  const currentNumberField = (numberPage - 1) * currentNumberRow;
+  const otherFields = currentNumberRow + currentNumberField;
+  const cutPlaylists = defaultPlaylist.slice(currentNumberField, otherFields);
+
+  dispatch({ type: MUSIC_NEXT_PAGE, payload: { cutPlaylists, numberPage } });
+};
+

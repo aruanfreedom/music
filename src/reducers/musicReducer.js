@@ -1,4 +1,11 @@
-import { MUSIC_FETCH, MUSIC_SORT, MUSIC_FILTER, MUSIC_FILTER_OPTIONS } from '../constants';
+import {
+  MUSIC_FETCH,
+  MUSIC_SORT,
+  MUSIC_FILTER,
+  MUSIC_FILTER_OPTIONS,
+  MUSIC_COUNT_FIELD,
+  MUSIC_NEXT_PAGE,
+} from '../constants';
 
 const INITIAL_STATE = {
   playlists: [],
@@ -8,21 +15,24 @@ const INITIAL_STATE = {
   options: {},
   currentSelected: {},
   fetch: false,
+  numberField: 10,
+  currentNumberRow: 10,
+  currentNumberPage: 1,
 };
 
 const music = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case MUSIC_FETCH: {
-      const newPlaylists = action.payload;
+      const { playlists, limitPlaylist } = action.payload;
       return {
         ...state,
         playlists: [
           ...state.playlists,
-          ...newPlaylists,
+          ...limitPlaylist,
         ],
         defaultPlaylist: [
-          ...state.playlists,
-          ...newPlaylists,
+          ...state.defaultPlaylist,
+          ...playlists,
         ],
         fetch: true,
       };
@@ -63,6 +73,22 @@ const music = (state = INITIAL_STATE, action) => {
           year,
         },
         fetch: false,
+      };
+    }
+    case MUSIC_COUNT_FIELD: {
+      const { limitPlaylists, numberField } = action.payload;
+      return {
+        ...state,
+        playlists: limitPlaylists,
+        currentNumberRow: numberField,
+      };
+    }
+    case MUSIC_NEXT_PAGE: {
+      const { cutPlaylists, numberPage } = action.payload;
+      return {
+        ...state,
+        playlists: cutPlaylists,
+        currentNumberPage: numberPage,
       };
     }
     default:

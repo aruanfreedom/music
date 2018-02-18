@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import MainComponent from './components/main/MainComponent';
+import MainComponent from './components/Main/MainComponent';
 import musicApp from './reducers';
 
 //eslint-disable-next-line

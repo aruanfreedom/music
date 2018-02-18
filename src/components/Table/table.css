@@ -5,11 +5,19 @@ body {
 }
 
 .playlists {
-    flex: 0 0 70%;
+    flex: 0 0 65%;
+}
+
+@media screen and (max-width: 1115px) {
+    .playlists {
+        flex: 0 0 90%;
+        margin: auto;
+        width: 90%;
+    }
 }
 
 .playlists table {
-    width: 95%;
+    width: 100%;
 }
 
 .playlists td {
@@ -58,4 +66,10 @@ body {
 
 .arrow-default:before {
     content: "\2194";
+}
+
+.navigations-table {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }

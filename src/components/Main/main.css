@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-width: 840px;
+}
+
+@media screen and (max-width: 1115px) {
+    .main {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}
+
+h3 {
+    color: rgb(152, 156, 157);
+}
