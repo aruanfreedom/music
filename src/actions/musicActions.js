@@ -41,9 +41,11 @@ export const orderSetName = (columnName, orderStatus, sortList) => (dispatch, ge
 };
 
 export const filter = (filterName, parameter) => (dispatch, getState) => {
-  const { defaultPlaylist, currentSelected } = getState().music;
+  const {
+    defaultPlaylist, currentSelected, currentNumberRow, currentNumberPage,
+  } = getState().music;
 
-  const filterPlaylist = defaultPlaylist.filter((playlist) => {
+  let filterPlaylist = defaultPlaylist.filter((playlist) => {
     const otherParametres = Object.keys(currentSelected).filter(currentParameter => currentParameter !== parameter);
 
     if (!otherParametres.length) {
@@ -59,6 +61,12 @@ export const filter = (filterName, parameter) => (dispatch, getState) => {
 
     return findEveryParameter;
   });
+
+  if (filterPlaylist.length > currentNumberRow) {
+    const currentNumberField = (currentNumberPage - 1) * currentNumberRow;
+    const otherFields = currentNumberRow + currentNumberField;
+    filterPlaylist = filterPlaylist.slice(currentNumberField, otherFields);
+  }
 
   const currents = { [parameter]: filterName };
 
