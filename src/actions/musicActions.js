@@ -41,9 +41,9 @@ export const orderSetName = (columnName, orderStatus, sortList) => (dispatch, ge
 };
 
 export const filter = (filterName, parameter) => (dispatch, getState) => {
-  const { defaultPlaylist, playlists, currentSelected } = getState().music;
-  const playlistsWasFiltering = defaultPlaylist.length ? defaultPlaylist : playlists;
-  const filterPlaylist = playlistsWasFiltering.filter((playlist) => {
+  const { defaultPlaylist, currentSelected } = getState().music;
+
+  const filterPlaylist = defaultPlaylist.filter((playlist) => {
     const otherParametres = Object.keys(currentSelected).filter(currentParameter => currentParameter !== parameter);
 
     if (!otherParametres.length) {
